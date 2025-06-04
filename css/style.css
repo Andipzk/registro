@@ -1,0 +1,57 @@
+/* Colores para los niveles de gravedad (Triaje) */
+.severity-critico {
+    background-color: #dc3545 !important; /* Rojo de Bootstrap (danger) */
+    color: white;
+    font-weight: bold;
+}
+
+.severity-urgente {
+    background-color: #fd7e14 !important; /* Naranja de Bootstrap (warning oscuro) */
+    color: white;
+    font-weight: bold;
+}
+
+.severity-moderado {
+    background-color: #ffc107 !important; /* Amarillo de Bootstrap (warning) */
+    color: black; /* Cambiado a negro para mejor contraste */
+    font-weight: bold;
+}
+
+.severity-leve {
+    background-color: #28a745 !important; /* Verde de Bootstrap (success) */
+    color: white;
+    font-weight: bold;
+}
+
+/* Opcional: Algunos estilos adicionales para botones grandes si no usas btn-lg directamente */
+.btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+}
+
+/* Estilo para los cards de conteo si quieres que el texto sea blanco */
+.card.bg-warning .card-title,
+.card.bg-warning .card-text {
+    color: black !important;
+}
+
+/* Asegura que el feedback de validación de Bootstrap se vea correctamente */
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.was-validated .form-control:invalid~.invalid-feedback,
+.form-control.is-invalid~.invalid-feedback {
+    display: block;
+}
+
+.was-validated .form-check-input:invalid~.form-check-label,
+.form-check-input.is-invalid~.form-check-label {
+    color: #dc3545;
+}
+
+.was-validated .form-check-input:invalid~.invalid-feedback,
+.form-check-input.is-invalid~.invalid-feedback {
+    display: block;
+}
